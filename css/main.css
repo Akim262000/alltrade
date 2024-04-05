@@ -68,4 +68,10 @@
   background-color:  rgb(0, 48, 102, .24);
 }
 
+/* security */
+.security_card {
+  width: 306px;
+  height: 150px;
+}
+
 /* * { outline: 1px solid red; } */
