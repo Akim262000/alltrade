@@ -1,7 +1,14 @@
 :root {
- 
+ --color1: #003066;
 }
 
+.bg1 {
+  background-color: var(--color1);
+}
+
+.color1 {
+  color: var(--color1);
+}
 
 /* designing */
 .designing h5 {
