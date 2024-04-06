@@ -52,7 +52,7 @@ main h2 {
 }
 
 .oil {
-  background-image: url(/img/oil.jpg);
+  background-image: url(/img/oil.png);
   position: relative;
   width: 306px;
   height: 402px;
@@ -128,11 +128,17 @@ main h2 {
 
 /* media */
 @media (max-width: 991px) {
- .oil {
-  height: 114px;
-  width: 720px;
-  background-size: contain(720px, 114px);
- } 
+  .oil, .gas, .tak {
+    width: 206px;
+    height: 312px;
+  }
+}
+
+@media (max-width: 767px) {
+  .oil, .gas, .tak {
+    width: 156px;
+    height: 250px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -144,6 +150,36 @@ main h2 {
   .security img {
     width: 36px;
     height: 36px;
+  }
+
+  .oil {
+    background-image: url(/img/oilMobile.png);
+    height: 108px;
+    width: 100%;
+  }
+
+  .oil::before {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .gas {
+    background-image: url(/img/gasMobile.png);
+    width: 100%;
+    height: 108px;
+  }
+
+  .gas::before {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .tak {
+    background-image: url(/img/takMobile.png);
+    width: 100%;
+    height: 108px;
+  }
+
+  .tak::before {
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 
