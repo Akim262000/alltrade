@@ -35,6 +35,15 @@ main h2 {
   color: var(--color3);
 }
 
+/* about */
+.about p {
+  font-size: 14px;
+}
+
+.about h4 {
+  font-size: 32px;
+}
+
 /* designing */
 .designing h5 {
   font-size: 12px;
@@ -118,6 +127,14 @@ main h2 {
 
 
 /* media */
+@media (max-width: 991px) {
+ .oil {
+  height: 114px;
+  width: 720px;
+  background-size: contain(720px, 114px);
+ } 
+}
+
 @media (max-width: 576px) {
   .security_card {
     max-width: 176px;
