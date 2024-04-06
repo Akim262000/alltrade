@@ -102,8 +102,32 @@ main h2 {
 
 /* security */
 .security_card {
-  width: 306px;
+  max-width: 350px;
+  width: 100%;
   height: 150px;
 }
 
-/* * { outline: 1px solid red; } */
+.security img {
+  width: 63px;
+  height: 63px;
+}
+
+.security p {
+  font-size: 12px;
+}
+
+
+/* media */
+@media (max-width: 576px) {
+  .security_card {
+    max-width: 176px;
+    height: 108px;
+  }
+
+  .security img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+* { outline: 1px solid red; }
