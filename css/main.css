@@ -37,10 +37,22 @@ main h2 {
 
 .navbar {
   --bs-navbar-toggler-icon-bg: url(/img/burger-menu.svg);
+  --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-focus-width: none;
 }
 
 .offcanvas {
   --bs-offcanvas-width: 218px;
+}
+
+.offcanvas.offcanvas-end {
+  top: 74px;
+  border-left: none;
+  height: 315px;
+}
+
+.navbar-nav li {
+  font-size: 12px;
 }
 
 
@@ -212,4 +224,4 @@ main h2 {
   }
 }
 
-* { outline: 1px solid red; }
+/* * { outline: 1px solid red; } */
