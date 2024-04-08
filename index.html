@@ -9,8 +9,62 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body id="body">
-    <header class="header mt-5">
+    <header class="header py-3">
       <div class="container mb-4">
+        <div class="row justify-content-between align-items-center">
+          <!-- <div class="col-5 p-0 navbar-expand-lg">
+            <a href="#" class="navbar-brand">
+              <img src="./img/alttradeLogoHeader.svg" alt="" width="137" height="42" />
+            </a>
+          </div> -->
+          <nav class="header__burger navbar navbar-expand-lg d-lg-none">
+            <div class="container">
+              <!-- Logo -->
+              <div class="col-auto">
+                <a href="#" class="navbar-brand">
+                  <img src="./img/alttradeLogoHeader.svg" alt="" width="137" height="42" />
+                </a>
+              </div>
+              <div class="col-5">
+                <div class="row justify-content-between">
+                  <div class="col-6 d-flex justify-content-between align-items-center p-0">
+                    <a href="#">
+                      <img src="./img/callHeader.svg" alt="" width="33" height="32" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/letterHeader.svg" alt="" width="36" height="27" />
+                    </a>
+                  </div>
+                  <!-- Burger-menu -->
+                  <div class="col-auto">
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="offcanvas bg-white offcanvas-end" tabindex="-1" id="offcanvasNavbar" data-bs-backdrop="false" aria-labelledby="offcanvasNavbarLabel">
+                <!-- <div class="offcanvas-header">
+                  <img src="./img/alttradeLogoHeader.svg" alt="Logo Alltrade">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                </div> -->
+                <div class="offcanvas-body shadow bg-body-tertiary rounded bg-white">
+                  <ul class="navbar-nav pe-3">
+                    <li class="nav-item text-end"><a class="nav-link color2" aria-current="page" href="#">Главная</a></li>
+                    <li class="nav-item text-end"><a class="nav-link color2" aria-current="page" href="#" class="color1">Каталог</a></li>
+                    <li class="nav-item text-end"><a class="nav-link color2" aria-current="page" href="#" class="color1">Проектирование и монтаж</a></li>
+                    <li class="nav-item text-end"><a class="nav-link color2" aria-current="page" href="#" class="color1">О компании</a></li>
+                    <li class="nav-item text-end"><a class="nav-link color2" aria-current="page" href="#" class="color1">Партнеры</a></li>
+                    <li class="nav-item text-end"><a class="nav-link color2" aria-current="page" href="#">Контакты</a></li>
+                    <li class="nav-item text-end"><a class="nav-link color2" aria-current="page" href="#" class="color1">Личный кабинет</a></li>
+                  </ul>
+                </div>
+            </div>
+          </nav>
+
+
+
+      <div class="d-none d-lg-block mb-4">
         <div class="row justify-content-between align-items-center">
           <div class="col-5 p-0">
             <img src="./img/alttradeLogoHeader.svg" alt="" width="137" height="42" />
@@ -27,8 +81,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 d-flex justify-content-between p-0">
-            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+          <nav class="col-12 d-flex justify-content-between p-0">
+            <a class=" active" aria-current="page" href="#">Главная</a>
             <a class="nav-link color2" href="#">Каталог</a>
             <a class="nav-link color2" href="#">Проектирование и монтаж</a>
             <a class="nav-link color2" href="#">О компании</a>
@@ -36,21 +90,20 @@
             <a class="nav-link color2" href="#">Контакты</a>
             <a class="nav-link color2" href="#">Блог</a>
             <a class="nav-link color2" href="#">Вход<img class="ml-2" src="./img/entrance.svg" alt="" /></a>
-          </div>
+          </nav>
         </div>
-
-        <!-- navigation -->
       </div>
+              <!-- carousel -->
       <img class="w-100" src="./img/header.jpg" alt="" />
     </header>
     <main>
-      <section class="About mt-5">
+      <section class="about mt-5">
         <div class="container">
           <div class="row flex-column justify-content-between">
             <div class="col-auto">
               <h2 class="text-center">О компании</h2>
             </div>
-            <div class="col-5 mx-auto my-4">
+            <div class="col-xl-5 col-10 mx-auto my-4">
               <p class="text-center">
                 Компания «АльтаТрейд» - это группа опытных специалистов, единомышленников в области обеспечения комплексной безопасности на
                 производстве.
@@ -60,19 +113,19 @@
               <div class="row justify-content-between">
                 <div class="col-6 col-lg-2 p-0">
                   <h4 class="text-center">+350</h4>
-                  <p class="text-center border-start p-3">квалифицированных специалистов</p>
+                  <p class="text-center border-start p-md-3">квалифицированных специалистов</p>
                 </div>
                 <div class="col-6 col-lg-2 p-0">
                   <h4 class="text-center">+500</h4>
-                  <p class="text-center border-start p-3">квалифицированных специалистов</p>
+                  <p class="text-center border-start p-md-3">квалифицированных специалистов</p>
                 </div>
                 <div class="col-6 col-lg-2 p-0">
                   <h4 class="text-center">+500</h4>
-                  <p class="text-center border-start p-3">квалифицированных специалистов</p>
+                  <p class="text-center border-start p-md-3">квалифицированных специалистов</p>
                 </div>
                 <div class="col-6 col-lg-2 p-0">
                   <h4 class="text-center">+500</h4>
-                  <p class="text-center border-start p-3">квалифицированных специалистов</p>
+                  <p class="text-center border-start p-md-3">квалифицированных специалистов</p>
                 </div>
               </div>
             </div>
@@ -85,20 +138,20 @@
             <div class="col-auto">
               <h2 class="text-center">Проектирование систем пожаротушения</h2>
             </div>
-            <div class="col-7 mx-auto my-4">
+            <div class="col-11 col-lg-7 mx-auto my-lg-4">
               <p class="text-center">
                 Гарантируем качество и профессиональный подход в организации слаботочных систем и систем пожаротушения для любых объектов
               </p>
             </div>
             <div class="col-12 mt-4">
               <div class="row justify-content-between">
-                <div class="col-auto oil">
+                <div class="col-lg-auto col-12 oil d-flex justify-content-center align-items-center align-items-sm-start">
                   <h5 class="p-3 text-uppercase text-center">Системы пожарной безопастности в нефтяной промышленности</h5>
                 </div>
-                <div class="col-auto gas">
+                <div class="col-lg-auto col-12 gas d-flex justify-content-center align-items-center align-items-sm-start my-3 my-sm-0">
                   <h5 class="p-3 text-uppercase text-center">Системы пожарной безопастности в газовой промышленности</h5>
                 </div>
-                <div class="col-auto tak">
+                <div class="col-lg-auto col-12 tak d-flex justify-content-center align-items-center align-items-sm-start">
                   <h5 class="p-3 text-uppercase text-center">Системы пожаротушения на предприятиях ТЭК</h5>
                 </div>
               </div>
@@ -111,32 +164,32 @@
         <div class="container">
           <div class="row">
             <div class="col-12 mx-auto my-4">
-              <h2 class="text-center">О компании</h2>
+              <h2 class="text-center">Безопасность на производстве</h2>
             </div>
             <div class="col-12">
-              <div class="row gy-4 justify-content-between">
-                <div class="security_card col-xxl-4 d-flex flex-column align-items-center justify-content-center border border-black p-3">
+              <div class="row justify-content-xl-between justify-content-around gy-4">
+                <div class="security_card col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center border border-black py-sm-3 px-sm-4 p-0">
                   <img src="./img/security1.svg" alt="">
-                  <p class="text-uppercase m-0 pt-3">Анализаторы газов и жидкостей</p>
+                  <p class="text-uppercase m-0 pt-3 text-center">Анализаторы газов и жидкостей</p>
                 </div>
-                <div class="security_card col-xxl-4 d-flex flex-column align-items-center justify-content-center border border-black p-3">
+                <div class="security_card col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center border border-black py-sm-3 px-sm-4 p-0">
                   <img src="./img/security2.svg" alt="">
-                  <p class="text-uppercase m-0 pt-3">Извещатели пламени</p>
+                  <p class="text-uppercase m-0 pt-3 text-center">Извещатели пламени</p>
                 </div>
-                <div class="security_card col-xxl-4 d-flex flex-column align-items-center justify-content-center border border-black p-3">
+                <div class="security_card col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center border border-black py-sm-3 px-sm-4 p-0">
                   <img src="./img/security3.svg" alt="">
-                  <p class="text-uppercase m-0 pt-3">Установки пожаротушения</p>
+                  <p class="text-uppercase m-0 pt-3 text-center">Установки пожаротушения</p>
                 </div>
-                <div class="security_card col-xxl-4 d-flex flex-column align-items-center justify-content-center border border-black p-3">
+                <div class="security_card col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center border border-black py-sm-3 px-sm-4 p-0">
                   <img src="./img/security4.svg" alt="">
-                  <p class="text-uppercase m-0 pt-3">Пылемеры и расходомеры</p>
+                  <p class="text-uppercase m-0 pt-3 text-center">Пылемеры и расходомеры</p>
                 </div>
-                <div class="security_card col-xxl-4 d-flex flex-column align-items-center justify-content-center border border-black p-3">
+                <div class="security_card col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center border border-black py-sm-3 px-sm-4 p-0">
                   <img src="./img/security5.svg" alt="">
-                  <p class="text-uppercase m-0 pt-3">Спецтехника</p>
+                  <p class="text-uppercase m-0 pt-3 text-center">Спецтехника</p>
                 </div>
-                <div class="security_card col-xxl-4 d-flex flex-column align-items-center justify-content-center border border-danger p-3">
-                  <p class="text-uppercase m-0 pt-3">Смотреть весь каталог</p>
+                <div class="security_card col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center border border-danger py-sm-3 px-sm-4 p-0">
+                  <p class="text-uppercase m-0 pt-3 text-center">Смотреть весь каталог</p>
                 </div>
               </div>
             </div>
@@ -151,7 +204,7 @@
             <div class="col-12 mx-auto my-4">
               <h2 class="text-center">Проконсультируем по любым вопросам</h2>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <h4>Команда Альтатрейд поможет подобрать оборудование и спроектировать ваше решение по безопасности</h4>
               <p class="mt-4 mb-5">Просто оставьте запрос, и мы очень оперативно свяжемся с вами:</p>
               <form>
@@ -159,20 +212,20 @@
                   <div class="col-12 mb-3">
                     <input placeholder="Фамилия и Имя" type="name" class="form-control border-0 border-bottom rounded-0 px-0 color2">
                   </div>
-                  <div class="col-5 mb-3">
+                  <div class="col-12 col-md-5 mb-3">
                     <input placeholder="e-mail" type="email" class="form-control border-0 border-bottom rounded-0 px-0 color2" id="email">
                   </div>
-                  <div class="col-5 mb-3">
+                  <div class="col-12 col-md-5 mb-3">
                     <input placeholder="Телефон" type="telephone" class="form-control border-0 border-bottom rounded-0 px-0 color2" id="telephone">
                   </div>
                   <div class="col-12 mt-4 mb-3">
-                    <button type="submit" class="btn btn-primary w-100 rounded-0">Заказать консультацию</button>
+                    <button type="submit" class="btn bg1 text-white w-100 rounded-0">Заказать консультацию</button>
                   </div>
                 </div>
               </form>
               <p>Нажимая «Оставить заявку», вы соглашаетесь с <a class="text-black" href="#">политикой конфиденциальности</a> и даете согласие на обработку ваших персональных данных</p>
             </div>
-            <div class="col-6">
+            <div class="col-0 col-md-6">
               <img class="img-fluid" src="./img/consultation.jpg" alt="Пожарный">
             </div>
           </div>
