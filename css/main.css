@@ -1,227 +1,407 @@
 :root {
- --color1: #2175BB;
- --color2: #9d9d9d;
- --color3: #777777;
- --color4: #ED2028;
- --color5: #003066;
-}
+  --color1: #2175BB;
+  --color2: #9d9d9d;
+  --color3: #777777;
+  --color4: #ED2028;
+  --color5: #003066;
+ }
+ 
+ /* color */
+ .bg1 {
+   background-color: var(--color1);
+ }
+ 
+ .bg2 {
+   background-color: var(--color2);
+ }
+ 
+ .bg3 {
+   background-color: var(--color3);
+ }
+ 
+ .bg4 {
+   background-color: var(--color4);
+ }
+ 
+ .bg5 {
+   background-color: var(--color5);
+ }
+ 
+ .color1 {
+   color: var(--color1);
+ }
+ 
+ .color2 {
+   color: var(--color2);
+ }
+ 
+ .color3 {
+   color: var(--color3);
+ }
+ 
+ .color4 {
+   color: var(--color4);
+ }
+ 
+ .color5 {
+   color: var(--color5);
+ }
+ 
+ main h2 {
+   color: var(--color3);
+ }
+ 
+ .link {
+   text-decoration: none;
+   color: var(--color5);
+ }
+ 
+ /* header */
+ .nav-link {
+   position: relative;
+   cursor: pointer;
+   text-decoration: none; 
+   color: var(--color5);
+ }
+ 
+ .nav-link::after {
+   display: block;
+   position: absolute;
+   left: 0;
+   width: 0;
+   height: 1px; 
+   color: var(--color5);
+   background-color: var(--color5); 
+   content: "";
+   transition: 0.3s ease-out; 
+   margin-top: 8px;
+ }
+ 
+ .nav-link:hover:after,
+ .nav-link:focus::after {
+   width: 100%;
+ }
+ 
+ .nav-link:hover {
+   color: var(--color5);
+ }
+ 
+ .navbar {
+   --bs-navbar-toggler-border-color: none;
+   --bs-navbar-toggler-focus-width: none;
+ }
+ 
+ .navbar-toggler-icon {
+   background-image: url(/img/burger-menu.svg);
+ }
+ 
+ .navbar-toggler-icon:active,
+ .navbar-toggler-icon:focus,
+ .navbar-toggler-icon:hover {
+   background-image: url(/img/burger-menu-active.svg);
+ }
+ 
+ .offcanvas {
+   --bs-offcanvas-width: 218px;
+ }
+ 
+ .offcanvas.offcanvas-end {
+   top: 74px;
+   border-left: none;
+   height: 315px;
+ }
+ 
+ .navbar-nav li {
+   font-size: 12px;
+ }
+ 
+ /* carousel */
+ .carousel h5 {
+   font-size: 12px;
+   line-height: 20px;
+ }
+ 
+ .carousel h3 {
+   font-size: 29px;
+   line-height: 49px;
+ }
+ 
+ .carousel-item {
+   height: 400px;
+ }
+ 
+ .carousel-item img {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .carousel-caption {
+   left: 20%;
+   top: 20%;;
+   background-color: #003066;
+   width: 430px;
+   height: 241px;
+   opacity: 0;
+   animation: form 3s forwards .4s;
+ }
+ 
+ @keyframes form {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+ }
+ 
+ 
+ /* about */
+ .about p {
+   font-size: 14px;
+ }
+ 
+ .about .col-6 p {
+   border-left: 1px solid var(--color2);
+ }
+ 
+ .about h4 {
+   font-size: 32px;
+ }
+ 
+ /* designing */
+ .designing h5 {
+   font-size: 12px;
+   max-width: 280px;
+   line-height: 16px;
+ }
+ 
+ .designing p {
+   font-size: 14px;
+ }
+ 
+ .oil {
+   background-image: url(/img/oil.png);
+   position: relative;
+   width: 306px;
+   height: 402px;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+ 
+ .oil::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color:  rgb(0, 48, 102, .24);
+ }
+ 
+ .gas {
+   background-image: url(/img/gas.jpg);
+   position: relative;
+   width: 306px;
+   height: 402px;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+ 
+ 
+ .gas::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color:  rgb(0, 48, 102, .24);
+ }
+ 
+ .tak {
+   background-image: url(/img/tak.jpg);
+   position: relative;
+   width: 306px;
+   height: 402px;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+ 
+ .tak::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color:  rgb(0, 48, 102, .24);
+ }
+ 
+ /* security and catalog*/
+ .security_card, .catalog_card {
+   max-width: 350px;
+   width: 100%;
+   height: 150px;
+ }
+ 
+ .security, .catalog img {
+   width: 63px;
+   height: 63px;
+ }
+ 
+ .security .catalog p {
+   font-size: 12px;
+ }
+ 
+ /* consultation */
+ .consultation h4 {
+   font-size: 24px;
+ }
+ 
+ .consultation p {
+   font-size: 14px;
+ }
+ 
+ .form-control::placeholder {
+   color: var(--color2);
+ }
+ 
+ .consultation .btn{
+   background-color: var(--color5);
+ }
+ 
+ .consultation .btn:hover{
+   background-color: var(--color5);
+ }
+ 
+ /* footer */
+ .footer h5 {
+   font-size: 28px;
+   font-weight: 400;
+ }
+ 
+ .footer p {
+   font-size: 14px;
+ }
+ 
+ /* media */
+ @media (max-width: 991px) {
+   .about .col-6 p {
+     border-left: none;
+   }
+ 
+   .oil, .gas, .tak {
+     width: 206px;
+     height: 312px;
+   }
+ 
+   .nav-link::after {
+     margin-top: 0;
+   }
+ }
+ 
+ @media (max-width: 767px) {
+   .oil, .gas, .tak {
+     width: 156px;
+     height: 250px;
+   }
+ 
+   .consultation img {
+     display: none;
+   }
+ 
+   .carousel h5 {
+     font-size: 12px;
+     line-height: 20px;
+   }
+   
+   .carousel h3 {
+     font-size: 20px;
+     line-height: 30px;
+   }
+ 
+   .carousel-caption {
+     left: 0;
+     right: 0;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: #003066;
+     width: 320px;
+     height: 220px;
+   }
+ }
+ 
+ @media (max-width: 576px) {
+   .carousel h5 {
+     font-size: 10px;
+     line-height: 16px;
+   }
+   
+   .carousel h3 {
+     font-size: 12px;
+     line-height: 18px;
+   }
+ 
+   .carousel-caption {
+     background-color: rgba(0, 0, 0, .5);
+     width: 193px;
+     height: 190px;
+   }
+ 
+   .carousel-caption .btn {
+     font-size: 10px;
+     line-height: 16px;
+   }
+ 
+   .security_card {
+     max-width: 176px;
+     height: 108px;
+   }
+ 
+   .security img {
+     width: 36px;
+     height: 36px;
+   }
 
-/* color */
-.bg1 {
-  background-color: var(--color5);
-}
+   .catalog p {
+    font-size: 12px;
+   }
 
-.color1 {
-  color: var(--color1);
-}
+   .catalog_card {
+    max-width: 361px;
+    height: 70px;
+   }
 
-.color2 {
-  color: var(--color2);
-}
-
-.color3 {
-  color: var(--color3);
-}
-
-.color4 {
-  color: var(--color4);
-}
-
-.color5 {
-  color: var(--color5);
-}
-
-main h2 {
-  color: var(--color3);
-}
-
-.navbar {
-  --bs-navbar-toggler-icon-bg: url(/img/burger-menu.svg);
-  --bs-navbar-toggler-border-color: none;
-  --bs-navbar-toggler-focus-width: none;
-}
-
-.offcanvas {
-  --bs-offcanvas-width: 218px;
-}
-
-.offcanvas.offcanvas-end {
-  top: 74px;
-  border-left: none;
-  height: 315px;
-}
-
-.navbar-nav li {
-  font-size: 12px;
-}
-
-
-/* about */
-.about p {
-  font-size: 14px;
-}
-
-.about h4 {
-  font-size: 32px;
-}
-
-/* designing */
-.designing h5 {
-  font-size: 12px;
-  color: #fff;
-  max-width: 280px;
-}
-
-.designing p {
-  font-size: 14px;
-}
-
-.oil {
-  background-image: url(/img/oil.png);
-  position: relative;
-  width: 306px;
-  height: 402px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.oil::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color:  rgb(0, 48, 102, .24);
-}
-
-.gas {
-  background-image: url(/img/gas.jpg);
-  position: relative;
-  width: 306px;
-  height: 402px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
-.gas::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color:  rgb(0, 48, 102, .24);
-}
-
-.tak {
-  background-image: url(/img/tak.jpg);
-  position: relative;
-  width: 306px;
-  height: 402px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.tak::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color:  rgb(0, 48, 102, .24);
-}
-
-/* security */
-.security_card {
-  max-width: 350px;
-  width: 100%;
-  height: 150px;
-}
-
-.security img {
-  width: 63px;
-  height: 63px;
-}
-
-.security p {
-  font-size: 12px;
-}
-
-/* consultation */
-.consultation h4 {
-  font-size: 24px;
-}
-
-.consultation p {
-  font-size: 14px;
-}
-
-/* media */
-@media (max-width: 991px) {
-  .oil, .gas, .tak {
-    width: 206px;
-    height: 312px;
+   .catalog img {
+    width: 45px;
+    height: 45px;
   }
-}
-
-@media (max-width: 767px) {
-  .oil, .gas, .tak {
-    width: 156px;
-    height: 250px;
-  }
-
-  .consultation img {
-    display: none;
-  }
-}
-
-@media (max-width: 576px) {
-  .security_card {
-    max-width: 176px;
-    height: 108px;
-  }
-
-  .security img {
-    width: 36px;
-    height: 36px;
-  }
-
-  .oil {
-    background-image: url(/img/oilMobile.png);
-    height: 108px;
-    width: 100%;
-  }
-
-  .oil::before {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .gas {
-    background-image: url(/img/gasMobile.png);
-    width: 100%;
-    height: 108px;
-  }
-
-  .gas::before {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .tak {
-    background-image: url(/img/takMobile.png);
-    width: 100%;
-    height: 108px;
-  }
-
-  .tak::before {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .footer {
-    display: none;
-  }
-}
-
-/* * { outline: 1px solid red; } */
+ 
+   .oil {
+     background-image: url(/img/oilMobile.png);
+     height: 108px;
+     width: 100%;
+     margin: 0 auto;
+   }
+ 
+   .oil, .gas, .tak::before {
+     width: 100%;
+     max-width: 360px;
+     margin: auto;
+   }
+ 
+   .gas {
+     background-image: url(/img/gasMobile.png);
+     width: 100%;
+     height: 108px;
+   }
+ 
+   .tak {
+     background-image: url(/img/takMobile.png);
+     width: 100%;
+     height: 108px;
+   }
+ 
+   .footer {
+     display: none;
+   }
+ }
+ 
+ /* * { outline: 1px solid red; } */
+ 
