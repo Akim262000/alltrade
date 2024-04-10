@@ -54,6 +54,7 @@
  .link {
    text-decoration: none;
    color: var(--color5);
+   font-size: 12px;
  }
  
  /* header */
@@ -233,21 +234,92 @@
    background-color:  rgb(0, 48, 102, .24);
  }
  
- /* security and catalog*/
- .security_card, .catalog_card {
+ /* security*/
+ .security_card {
    max-width: 350px;
    width: 100%;
    height: 150px;
  }
- 
- .security, .catalog img {
+
+ .security_card-red {
+  border: 1px solid var(--color4);
+  color: var(--color4) !important;
+  max-width: 350px;
+  width: 100%;
+  height: 150px;
+ }
+
+ .security_card-red p {
+  font-size: 12px;
+  color: var(--color4);
+ }
+
+ .security_card-red:active a,
+ .security_card-red:hover a,
+ .security_card-red:focus a {
+  color: #fff;;
+ }
+
+ .security_card-red:active,
+ .security_card-red:hover,
+ .security_card-red:focus {
+  background-color: var(--color4) !important;
+ }
+
+ .security_card:active,
+ .security_card:hover,
+ .security_card:focus {
+  background-color: var(--color5);
+}
+
+.security_card:active a,
+.security_card:hover a,
+.security_card:focus a {
+  color: #fff;
+}
+
+ .security img {
    width: 63px;
    height: 63px;
  }
+
+/* .security_card:hover svg {
+  fill: #fff;
+} */
  
- .security .catalog p {
+ .security_card p {
    font-size: 12px;
+   color: var(--color5);
  }
+
+ /* catalog */
+ .catalog_card {
+  max-width: 350px;
+  width: 100%;
+  height: 150px;
+}
+
+.catalog_card:active,
+.catalog_card:hover,
+.catalog_card:focus {
+ background-color: var(--color5);
+}
+
+.catalog_card:active a,
+.catalog_card:hover a,
+.catalog_card:focus a {
+ color: #fff;
+}
+
+.catalog img {
+  width: 63px;
+  height: 63px;
+}
+
+.catalog p {
+  font-size: 12px;
+  color: var(--color5);
+}
  
  /* consultation */
  .consultation h4 {
@@ -267,18 +339,116 @@
  }
  
  .consultation .btn:hover{
-   background-color: var(--color5);
+   background-color: var(--color4);
  }
 
  /* analyzers */
  .analyzers_card {
-  max-width: 199px;
+  max-width: 230px;
   width: 100%;
   height: 102px;
   border: 1px solid var(--color2);
+  border-bottom: 3px solid var(--color5);
  }
 
+ .analyzers_card:focus,
+ .analyzers_card:hover,
+ .analyzers_card:active {
+  background-color: var(--color4);
+  border-bottom: none;
+ }
+
+ .analyzers_block {
+  max-width: 340px;
+  width: 100%;
+  /* height: 50vh; */
+ }
+
+ /* blog */
+  .blog p {
+    font-size: 12px;
+  }
+
+ .blog_card {
+  background-image: url(/img/blog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 198px;
+  max-width: 562px;
+  height: 198px;
+ }
+
+ .blog_card button {
+  background-color: transparent;
+ }
+
+ .blog .btn {
+  --bs-btn-border-radius: none;
+  background-color: var(--color5);
+ }
+
+ .blog .btn:hover{
+  background-color: var(--color4);
+}
+
+.portableGas h4 {
+  font-size: 12px;
+}
+
+.portableGas p {
+  font-size: 12px;
+}
+
+.portableGas_card {
+  border: 1px solid var(--color2);
+  max-width: 100%;
+}
+
+.page-item:last-child .page-link {
+  border-bottom-right-radius: 0;
+}
+
+.page-item:first-child .page-link {
+  border-bottom-left-radius: 0;
+}
+
+.page-link {
+ color: var(--color2);
+ background-color: transparent;
+ border: none;
+ position: relative;
+ /* border-bottom: 3px solid var(--color2); */
+
+}
+
+.page-link::after {
+  background-color: var(--color2); 
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 50%;
+  border-radius: 20px;
+  position: absolute;
+  transform: translate(-50%,0);
+  width: 46px;
+}
+
+.page-link:active,
+.page-link:hover,
+.page-link:focus {
+  color: var(--color5);
+  border: none;
+ }
  
+.page-link:hover{
+  background-color: var(--color4);
+}
+
+.pagination {
+  --bs-pagination-focus-box-shadow: 0;
+}
+
  /* footer */
  .footer h5 {
    font-size: 28px;
@@ -290,6 +460,12 @@
  }
  
  /* media */
+@media (max-width: 1200px) {
+  .blog_card {
+    max-width: 48%;
+   }
+}
+
  @media (max-width: 991px) {
    .about .col-6 p {
      border-left: none;
@@ -302,6 +478,17 @@
  
    .nav-link::after {
      margin-top: 0;
+   }
+
+   .analyzers_card {
+    max-width: 180px;
+    width: 100%;
+    height: 102px;
+   }  
+
+   .analyzers_block {
+    max-width: 100%;
+    height: 230px;
    }
  }
  
@@ -334,6 +521,10 @@
      width: 320px;
      height: 220px;
    }
+
+   .analyzers_card {
+    max-width: 230px;
+   }  
  }
  
  @media (max-width: 576px) {
@@ -405,6 +596,17 @@
      background-image: url(/img/takMobile.png);
      width: 100%;
      height: 108px;
+   }
+
+   .analyzers_card {
+    max-width: 173px;
+    height: 70px;
+   }  
+
+   .blog_card {
+    max-width: 100%;
+    height: 162px;
+    background-size: 100% 162px;
    }
  
    .footer {
