@@ -351,6 +351,12 @@
   border-bottom: 3px solid var(--color5);
  }
 
+ .analyzers_card:active a,
+.analyzers_card:hover a,
+.analyzers_card:focus a {
+ color: #fff;
+}
+
  .analyzers_card:focus,
  .analyzers_card:hover,
  .analyzers_card:active {
