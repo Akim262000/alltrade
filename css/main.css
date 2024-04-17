@@ -419,14 +419,16 @@ main h2 {
   color: #fff;
 }
 
-.security img {
+.security_card:hover .img-svg path{
+  fill: #fff;
   width: 63px;
   height: 63px;
 }
 
-/* .security_card:hover svg {
-  fill: #fff;
-} */
+.security img {
+  width: 63px;
+  height: 63px;
+}
 
 .security_card p {
   font-size: 12px;
@@ -450,6 +452,10 @@ main h2 {
 .catalog_card:hover a,
 .catalog_card:focus a {
   color: #fff;
+}
+
+.catalog_card:hover .img-svg path{
+  fill: #fff;
 }
 
 .catalog img {
