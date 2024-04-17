@@ -117,12 +117,19 @@ main h2 {
 
 .accordion {
   --bs-accordion-bg: transparent;
-  --bs-accordion-border-width: 1px;
+  --bs-accordion-border-width: 0;
   --bs-accordion-btn-focus-box-shadow: 0;
+}
+
+.accordion:active,
+.accordion:focus {
+  --bs-accordion-border-width: 1px;
 }
 
 .accordion-body {
   color: #fff;
+  border-top: 1px solid #fff;
+  width: 70%;
 }
 
 .accordion-body .dropdown-item {
@@ -158,7 +165,7 @@ main h2 {
 
 .dropdown-menu.show {
   left: -40px !important;
-  top: 46px !important;
+  top: 30px !important;
   border: 1px solid var(--color5);
   background-color: rgba(0, 48, 102, .66);
   backdrop-filter: blur(5px);
@@ -166,6 +173,7 @@ main h2 {
   width: 827px;
   height: fit-content;
   min-height: 290px;
+  border: none;
 }
 
 /* .dropdown:hover .dropdown-menu {
@@ -551,7 +559,7 @@ main h2 {
 }
 
 .page-link {
-  color: var(--color2);
+  color: var(--color6);
   background-color: transparent;
   border: none;
   position: relative;
@@ -559,7 +567,7 @@ main h2 {
 }
 
 .page-link::after {
-  background-color: var(--color2);
+  background-color: var(--color6);
   bottom: 0;
   content: "";
   display: block;
@@ -572,10 +580,15 @@ main h2 {
 }
 
 .page-link:active,
-.page-link:hover,
 .page-link:focus {
   color: var(--color5);
   border: none;
+}
+
+.page-link:active:after,
+.page-link:focus:after,
+.page-link:hover:after {
+  background-color: #ed2028;
 }
 
 .page-link:hover {
