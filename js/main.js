@@ -1,11 +1,16 @@
-// $('#multiCollapse1').on('show.bs.collapse', function () {
-//   $('#multiCollapse').collapse('hide')
-// });
+document.addEventListener('DOMContentLoaded', () => {
+              
+  const collapseElements = document.querySelectorAll('#target-container .collapse');
+  collapseElements.forEach(collapseEl => {
+    new bootstrap.Collapse(collapseEl, { toggle: false, parent: '#target-container' });
+  })
+  document.addEventListener('click', (e) => {
+    if (!e.target.dataset.target) {
+      return;
+    }
+    const collapseElement = document.querySelector(e.target.dataset.target);
+    const collapse = bootstrap.Collapse.getInstance(collapseElement);
+    collapse.toggle();
+  });
 
-var multiCollapse1 = document.getElementById('multiCollapse1')
-var multiCollapse2 = document.getElementById('multiCollapse2')
-var multiCollapse3 = document.getElementById('multiCollapse3')
-var multiCollapse4 = document.getElementById('multiCollapse4')
-multiCollapse1.addEventListener('hidden.bs.collapse', function () {
-  multiCollapse2.collapse('hide')
 });
