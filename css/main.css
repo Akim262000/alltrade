@@ -971,8 +971,8 @@ main h2 {
     background-size: 100% 162px;
   }
 
-  .footer {
-    display: none;
+  .footer h5 {
+    font-size: 20px;
   }
 }
 
