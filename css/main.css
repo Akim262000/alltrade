@@ -1,9 +1,10 @@
 :root {
   --color1: #2175bb;
-  --color2: #9d9d9d;
+  --color2: #d9d9d9;
   --color3: #777777;
   --color4: #ed2028;
   --color5: #003066;
+  --color6: #9d9d9d;
 }
 
 /* color */
@@ -27,6 +28,10 @@
   background-color: var(--color5);
 }
 
+.bg6 {
+  background-color: var(--color6);
+}
+
 .color1 {
   color: var(--color1);
 }
@@ -47,6 +52,10 @@
   color: var(--color5);
 }
 
+.color6 {
+  color: var(--color6);
+}
+
 main h2 {
   color: var(--color3);
 }
@@ -63,7 +72,7 @@ main h2 {
   cursor: pointer;
   width: max-content;
   text-decoration: none;
-  color: var(--color2);
+  color: var(--color6);
 }
 
 .nav-link::after {
@@ -645,8 +654,10 @@ main h2 {
 }
 
 .product_info .btn {
-  background-color: #d9d9d9;
+  background-color: var(--color2);
   color: #000;
+  font-size: 12px;
+  width: 168px;
 }
 
 .product_info .btn:active, .btn:hover, .btn:focus {
@@ -656,7 +667,7 @@ main h2 {
 
 .card {
   --bs-card-border-width: 3px;
-  --bs-card-border-color: #d9d9d9 !important;
+  --bs-card-border-color: var(--color2) !important;
 }
 
 
@@ -710,6 +721,11 @@ main h2 {
 
   .disigning_card {
     border: 1px solid var(--color2);
+  }
+
+  .product_info .btn {
+    width: 100%;
+    border: 1px solid var(--color6);
   }
 }
 
@@ -838,6 +854,11 @@ main h2 {
     height: 162px;
     background-size: 100% 162px;
   }
+
+  /* .product img {
+    min-width: 106px;
+    min-height: 141px;
+  } */
 
   .footer {
     display: none;
