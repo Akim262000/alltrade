@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body id="body">
-    <header class="header py-3">
+    <header class="header pt-3">
       <div class="container mb-2">
         <div class="row justify-content-between align-items-center">
           <!-- <div class="col-5 p-0 navbar-expand-lg">
@@ -21,7 +21,7 @@
             <div class="container">
               <!-- Logo -->
               <div class="col-auto">
-                <a href="#" class="navbar-brand">
+                <a href="./index.html" class="navbar-brand">
                   <img src="./img/alttradeLogoHeader.svg" alt="" width="137" height="42" />
                 </a>
               </div>
@@ -37,7 +37,7 @@
                   </div>
                   <!-- Burger-menu -->
                   <div class="col-auto">
-                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <button class="navbar-toggler p-0" type="button" title="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                   </div>
@@ -46,9 +46,9 @@
               <div class="offcanvas bg-white offcanvas-end" tabindex="-1" id="offcanvasNavbar" data-bs-backdrop="false" data-bs-dismiss="offcanvas" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-body shadow rounded rounded-0 bg-white">
                   <ul class="navbar-nav">
-                    <li class="nav-item text-end"><a class="nav-link" aria-current="page" href="#">Главная</a></li>
-                    <li class="nav-item text-end"><a class="nav-link" aria-current="page" href="./catalog.html">Каталог</a></li>
-                    <li class="nav-item text-end"><a class="nav-link" aria-current="page" href="#">Проектирование и монтаж</a></li>
+                    <li class="nav-item text-end"><a class="nav-link" aria-current="page" href="./index.html">Главная</a></li>
+                    <li class="nav-item text-end"><a class="nav-link" aria-current="page" href="./catalog.html" target="_blank">Каталог</a></li>
+                    <li class="nav-item text-end"><a class="nav-link" aria-current="page" href="./portableGas.html">Проектирование и монтаж</a></li>
                     <li class="nav-item text-end"><a class="nav-link" aria-current="page" href="#">О компании</a></li>
                     <li class="nav-item text-end"><a class="nav-link" aria-current="page" href="#">Партнеры</a></li>
                     <li class="nav-item text-end"><a class="nav-link" aria-current="page" href="#">Контакты</a></li>
@@ -57,10 +57,15 @@
                 </div>
             </div>
           </nav>
+
+
+
       <div class="d-none d-lg-block mb-4">
         <div class="row justify-content-between align-items-center">
           <div class="col-5 p-0">
-            <img src="./img/alttradeLogoHeader.svg" alt="" width="137" height="42" />
+            <a href="./index.html" class="navbar-brand">
+              <img src="./img/alttradeLogoHeader.svg" alt="" width="137" height="42" />
+            </a>
           </div>
           <div class="col-6">
             <div class="row justify-content-between">
@@ -75,21 +80,69 @@
             </div>
           </div>
           <nav class="col-12 d-flex justify-content-between align-items-end p-0 mt-4">
-            <a class="nav-link" aria-current="page" href="#">Главная</a>
-            <a class="nav-link" href="./catalog.html">Каталог</a>
-            <a class="nav-link" href="#">Проектирование и монтаж</a>
+            <a class="nav-link" aria-current="page" href="./index.html">Главная</a>
+            <li class="nav-item dropdown" style="list-style-type: none;">
+              <a class="nav-link dropdown-toggle" href="./catalog.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Каталог
+              </a>
+              
+              <ul class="dropdown-menu rounded-0 p-4" aria-labelledby="navbarDropdown">
+                <div class="container dropdown-container">
+                  <div class="row justify-content-between">
+                    <div class="col-6">
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item border-0">
+                          <h2 class="accordion-header">
+                            <a class="accordion-button dropdown-item pb-0" href="#" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                             <span class="pb-3">Анализаторы газов и жидкостей</span>
+                            </a>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body ps-0">
+                              <ul class="list-unstyled">
+                                <li><a class="dropdown-item mb-1 pb-1" href="">Стационарные газоанализаторы</a></li>
+                                <li><a class="dropdown-item mb-1 pb-1" href="./portableGas.html">Портативные газоанализаторы</a></li>
+                                <li><a class="dropdown-item mb-1 pb-1" href="">Радиоканальные газоаналитические системы</a></li>
+                                <li><a class="dropdown-item mb-1 pb-1" href="">Системы измерительные</a></li>
+                                <li><a class="dropdown-item mb-1 pb-1" href="">Поточные газоанализаторы</a></li>
+                                <li><a class="dropdown-item mb-1 pb-1" href="">Газоанализаторы микроконцентраций</a></li>
+                                <li><a class="dropdown-item mb-1 pb-1" href="">Анализаторы АСИС</a></li>
+                                <li><a class="dropdown-item mb-1 pb-1" href="">Анализаторы SIEMENS</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <li><a class="dropdown-item mb-3" href="#">Извещатели пламени</a></li>
+                      <li><a class="dropdown-item mb-3" href="#">Пылемеры и расходомеры</a></li>
+                      <li><a class="dropdown-item mb-3" href="#">Тренировочные комплексы для пожарных в системе МЧС</a></li>
+                      <li><a class="dropdown-item mb-3" href="#">Установки пожаротушения</a></li>
+                      <li><a class="dropdown-item mb-3" href="#">Насосное оборудование</a></li>
+                    </div>
+                    <div class="col-5">
+                      <li><a class="dropdown-item mb-3" href="#">Системы обогрева Thermon</a></li>
+                      <li><a class="dropdown-item mb-3" href="#">Мобильный лазерный симулятор огнетушителя</a></li>
+                      <li><a class="dropdown-item mb-3" href="#">Пожарные рукава</a></li>
+                      <li><a class="dropdown-item mb-3" href="#">Мотопомпы пожарные</a></li>
+                      <li><a class="dropdown-item mb-3" href="#">Спецтехника</a></li>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <a class="nav-link" href="./designing.html">Проектирование и монтаж</a>
             <a class="nav-link" href="#">О компании</a>
             <a class="nav-link" href="#">Партнеры</a>
             <a class="nav-link" href="#">Контакты</a>
-            <a class="nav-link" href="#">Блог</a>
+            <a class="nav-link" href="/blog.html" target="_blank">Блог</a>
             <a class="nav-link" href="#">Вход<img class="ms-2" src="./img/sign-in.svg" alt="" /></a>
           </nav>
         </div>
       </div>
-  <!-- carousel -->
     </header>
+
     <main>
-      <section class="catalog analyzers">
+      <section class="catalog analyzers mt-3">
         <div class="container">
           <div class="row p-2 p-sm-0">
             <div class="col-12 p-0">

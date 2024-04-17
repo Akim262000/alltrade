@@ -67,6 +67,10 @@ main h2 {
 }
 
 /* header */
+.header {
+  border-bottom: 1px solid var(--color5);
+}
+
 .nav-link {
   position: relative;
   cursor: pointer;
@@ -446,7 +450,7 @@ main h2 {
 }
 
 .catalog p {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--color5);
 }
 
@@ -496,7 +500,6 @@ main h2 {
 .analyzers_block {
   max-width: 340px;
   width: 100%;
-  /* height: 50vh; */
 }
 
 /* blog */
@@ -530,7 +533,7 @@ main h2 {
   font-size: 12px;
 }
 
-.portableGas p {
+.portableGas_card p {
   font-size: 12px;
 }
 
@@ -670,8 +673,13 @@ main h2 {
   --bs-card-border-color: var(--color2) !important;
 }
 
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--color6);
+}
+
 .breadcrumb-item .link {
   font-size: 14px;
+  color: var(--color6);
 }
 
 
@@ -690,13 +698,30 @@ main h2 {
   .blog_card {
     max-width: 48%;
   }
+  
+  .catalog p {
+    font-size: 18px;
+  }
+
+  .portableGas .analyzers_block {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 991px) {
+  .header {
+    border-bottom: none;
+    box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.4);
+  }
+
+  .header.header_main {
+    box-shadow: none;
+  }
+
   .about .col-6 p {
     border-left: none;
   }
-
+  
   .oil,
   .gas,
   .tak {
@@ -714,9 +739,16 @@ main h2 {
     height: 102px;
   }
 
-  .analyzers_block {
+   .analyzers_block {
     max-width: 100%;
-    height: 230px;
+  }
+
+  .portableGas + .analyzers_block {
+    height: 290px;
+  }
+
+  .analyzers + .analyzers_block {
+    height: 260px;
   }
   
   .disigning_img {
@@ -730,6 +762,10 @@ main h2 {
   .product_info .btn {
     width: 100%;
     border: 1px solid var(--color6);
+  }
+
+  .portableGas .analyzers_block {
+    font-size: 14px;
   }
 }
 
@@ -765,8 +801,17 @@ main h2 {
     height: 190px;
   }
 
+  .catalog p {
+    font-size: 14px;
+  }
+
   .analyzers_card {
     max-width: 230px;
+  }
+
+  .portableGas + .analyzers_block {
+    max-width: 100%;
+    height: 280px;
   }
 }
 
