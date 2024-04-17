@@ -596,7 +596,7 @@ main h2 {
   padding-left: 1rem;
 }
 
-.disigning li {
+.disigning_main li {
   list-style-image: url(/img/point.svg);
   padding-left: 30px;
   font-size: 14px;
@@ -668,6 +668,10 @@ main h2 {
 .card {
   --bs-card-border-width: 3px;
   --bs-card-border-color: var(--color2) !important;
+}
+
+.breadcrumb-item .link {
+  font-size: 14px;
 }
 
 
@@ -854,11 +858,6 @@ main h2 {
     height: 162px;
     background-size: 100% 162px;
   }
-
-  /* .product img {
-    min-width: 106px;
-    min-height: 141px;
-  } */
 
   .footer {
     display: none;
