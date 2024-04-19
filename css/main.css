@@ -655,7 +655,6 @@ main h2 {
   max-width: 100%;
   height: max-content;
   min-height: 186px;
-  margin-bottom: 20px;
 }
 
 /* горизонтальный скролл */
@@ -837,7 +836,6 @@ main h2 {
 
   .disigning_card {
     border: 1px solid var(--color6);
-    margin-bottom: 0px;
   }
 
   .disigning_block-cards {
@@ -998,9 +996,9 @@ main h2 {
     background-size: 100% 162px;
   }
 
-  .disigning_card {
+  /* .disigning_card {
     max-width: 700px;
-   }
+   } */
 
   .footer h5 {
     font-size: 20px;
