@@ -58,6 +58,7 @@
 
 main h2 {
   color: var(--color3);
+  font-size: 32px;
 }
 
 .link {
@@ -538,8 +539,20 @@ main h2 {
 }
 
 /* blog */
+.blog h4 {
+  font-size: 20px;
+}
+
+.blog_card button:hover {
+  opacity:  .7;
+}
+
 .blog p {
-  font-size: 12px;
+  font-size: 13px;
+}
+
+.blog time {
+  font-size: 20px;
 }
 
 .blog_card {
@@ -547,7 +560,7 @@ main h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 198px;
-  max-width: 562px;
+  width: 49%;
   height: 198px;
 }
 
@@ -674,7 +687,7 @@ border-radius: 8px;
 .disigning_main li {
   list-style-image: url(/img/point.svg);
   padding-left: 30px;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 16px;
 }
 
